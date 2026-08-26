@@ -106,6 +106,7 @@ h2.disp{font-size:clamp(28px,3.6vw,46px)}
 .strip::-webkit-scrollbar-thumb{background:var(--line)}
 .strip.dragging{cursor:grabbing;scroll-snap-type:none}
 .card{flex:0 0 min(300px,72vw);scroll-snap-align:start;background:var(--well);position:relative;height:400px;overflow:hidden;transition:flex-basis .36s var(--ease);user-select:none;display:block}
+.card .cardbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .card::before{content:"";position:absolute;inset:-15%;background:conic-gradient(from var(--rot,200deg) at 55% 45%, #0D0F12, #1B2026, #0B0D10, #14171B, #0D0F12)}
 .card::after{content:"";position:absolute;inset:0;background:linear-gradient(185deg,rgba(16,18,20,.05) 32%,rgba(16,18,20,.76))}
 .card:hover,.card:focus-visible{flex-basis:min(420px,80vw);outline:none}
@@ -215,12 +216,9 @@ footer{background:#fff;border-top:1px solid var(--line);padding:52px 0 40px}
   </div>
 </div>
 <div class="machine rv" id="hero-machine" data-vslot="hero">
-  <!-- VIDEO SLOT: replace .footage with
-       <video autoplay muted loop playsinline preload="metadata" poster="/media/video/hero-poster.jpg" src="/media/video/hero-loop.mp4"></video> -->
-  <div class="footage"></div>
+  <video class="footage" autoplay muted loop playsinline preload="metadata" poster="media/video/hero-poster.jpg"><source src="media/video/hero.mp4" type="video/mp4"></video>
   <div class="grain"></div>
   <div class="scrim"></div>
-  <div class="vidtag"><span class="dot"></span> VIDEO SLOT — AUTOPLAY · MUTED · LOOP · POSTER</div>
   <div class="in">
     <div>
       <div class="mk">EPS · Engineered lubricant systems</div>
@@ -240,12 +238,12 @@ footer{background:#fff;border-top:1px solid var(--line);padding:52px 0 40px}
   <div class="sec-head rv"><span class="idx">01</span><h2 class="disp">Choose your world</h2><span class="sec-sub">drag the strip · each sector runs its own footage</span></div>
   <div class="striphold rv">
     <div class="strip" id="strip">
-      <a class="card" href="sector-automotive.html" style="--rot:190deg" data-si="0"><span class="vt">LOOP · POSTER</span><div class="cin"><span class="no">SEC/01</span><h3>Automotive</h3><p>Passenger-car service fills, workshop and trade supply.</p><span class="go">ENTER SECTOR →</span></div></a>
-      <a class="card" href="sector-performance.html" style="--rot:220deg" data-si="1"><span class="vt">LOOP · POSTER</span><div class="cin"><span class="no">SEC/02</span><h3>Performance</h3><p>Race-proven chemistry for engines that live at the limit.</p><span class="go">ENTER SECTOR →</span></div></a>
-      <a class="card" href="sector-transport.html" style="--rot:250deg" data-si="2"><span class="vt">LOOP · POSTER</span><div class="cin"><span class="no">SEC/03</span><h3>Transport</h3><p>Long-drain fleet lubrication and AdBlue® at scale.</p><span class="go">ENTER SECTOR →</span></div></a>
-      <a class="card" href="sector-industrial.html" style="--rot:280deg" data-si="3"><span class="vt">LOOP · POSTER</span><div class="cin"><span class="no">SEC/04</span><h3>Industrial</h3><p>Hydraulics, circulation and greases for continuous plant.</p><span class="go">ENTER SECTOR →</span></div></a>
-      <a class="card" href="sector-agrar.html" style="--rot:310deg" data-si="4"><span class="vt">LOOP · POSTER</span><div class="cin"><span class="no">SEC/05</span><h3>Agrar</h3><p>Field machinery that cannot stop for a season.</p><span class="go">ENTER SECTOR →</span></div></a>
-      <a class="card" href="sector-defense.html" style="--rot:340deg" data-si="5"><span class="vt">LOOP · POSTER</span><div class="cin"><span class="no">SEC/06</span><h3>Defense</h3><p>Specification-first supply for demanding fleets.</p><span class="go">ENTER SECTOR →</span></div></a>
+      <a class="card" href="sector-automotive.html" style="--rot:190deg" data-si="0"><img class="cardbg" src="media/video/automotive-poster.jpg" alt="" loading="lazy"><div class="cin"><span class="no">SEC/01</span><h3>Automotive</h3><p>Passenger-car service fills, workshop and trade supply.</p><span class="go">ENTER SECTOR →</span></div></a>
+      <a class="card" href="sector-performance.html" style="--rot:220deg" data-si="1"><img class="cardbg" src="media/video/performance-poster.jpg" alt="" loading="lazy"><div class="cin"><span class="no">SEC/02</span><h3>Performance</h3><p>Race-proven chemistry for engines that live at the limit.</p><span class="go">ENTER SECTOR →</span></div></a>
+      <a class="card" href="sector-transport.html" style="--rot:250deg" data-si="2"><img class="cardbg" src="media/video/transport-poster.jpg" alt="" loading="lazy"><div class="cin"><span class="no">SEC/03</span><h3>Transport</h3><p>Long-drain fleet lubrication and AdBlue® at scale.</p><span class="go">ENTER SECTOR →</span></div></a>
+      <a class="card" href="sector-industrial.html" style="--rot:280deg" data-si="3"><img class="cardbg" src="media/video/industrial-poster.jpg" alt="" loading="lazy"><div class="cin"><span class="no">SEC/04</span><h3>Industrial</h3><p>Hydraulics, circulation and greases for continuous plant.</p><span class="go">ENTER SECTOR →</span></div></a>
+      <a class="card" href="sector-agrar.html" style="--rot:310deg" data-si="4"><img class="cardbg" src="media/video/agrar-poster.jpg" alt="" loading="lazy"><div class="cin"><span class="no">SEC/05</span><h3>Agrar</h3><p>Field machinery that cannot stop for a season.</p><span class="go">ENTER SECTOR →</span></div></a>
+      <a class="card" href="sector-defense.html" style="--rot:340deg" data-si="5"><div class="cin"><span class="no">SEC/06</span><h3>Defense</h3><p>Specification-first supply for demanding fleets.</p><span class="go">ENTER SECTOR →</span></div></a>
     </div>
     <div class="striphint"><span>← DRAG</span><span>06 SECTORS</span></div>
   </div>

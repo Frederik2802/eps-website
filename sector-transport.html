@@ -98,6 +98,7 @@ footer{background:#fff;border-top:1px solid var(--line);padding:44px 0 36px}
 .shero h1{font-weight:800;text-transform:uppercase;line-height:.9;letter-spacing:-.02em;font-variation-settings:'wdth' 121;font-size:clamp(40px,8.5vw,128px);color:#fff}
 .shero p{max-width:52ch;margin-top:18px;color:#D5D8DB;font-size:17px}
 .shero .ticks{position:absolute;left:0;right:0;bottom:0;height:18px;border-top:1px solid rgba(255,255,255,.14);background:repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 1px,transparent 1px 40px)}
+.machine video.footage{width:116%;height:116%;object-fit:cover;animation:none;background:#101214}
 .shero .cue{position:absolute;right:var(--pad);bottom:70px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;color:#7B7E83;writing-mode:vertical-rl;display:flex;align-items:center;gap:10px}
 .shero .cue::after{content:"";width:1px;height:44px;background:linear-gradient(#7B7E83,transparent);animation:cue 1.8s var(--ease) infinite}
 @keyframes cue{50%{transform:translateY(8px);opacity:.4}}
@@ -132,10 +133,9 @@ footer{background:#fff;border-top:1px solid var(--line);padding:44px 0 36px}
 </div></header>
 
 <div class="machine shero" data-vslot="opener">
-  <!-- VIDEO SLOT: <video autoplay muted loop playsinline preload="metadata" poster="/media/video/performance-poster.jpg" src="/media/video/performance-loop.mp4"></video> -->
-  <div class="footage"></div><div class="grain"></div><div class="scrim"></div>
-  <div class="vidtag"><span class="dot"></span> SECTOR VIDEO — AUTOPLAY · MUTED · LOOP · POSTER</div>
-  <div class="in">
+  <video class="footage" autoplay muted loop playsinline preload="metadata" poster="media/video/transport-poster.jpg"><source src="media/video/transport.mp4" type="video/mp4"></video>
+  <div class="grain"></div><div class="scrim"></div>
+    <div class="in">
     <div class="sk">Sector 03 / 06</div>
     <h1 data-c="title">Transport</h1>
     <p data-c="intro">Long-drain fleet lubrication and AdBlue® at scale — for operators who count cost per kilometre, not per litre.</p>
