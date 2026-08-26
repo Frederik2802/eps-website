@@ -64,12 +64,12 @@ nav a:hover::after{right:0}
 
 
 /* full-top video hero */
-.machine.hero-top{min-height:100vh;padding-top:66px;margin-top:0}
+.machine.hero-top{min-height:74vh;padding-top:66px;margin-top:0}
 .machine.hero-top .in{flex-direction:column;align-items:flex-start!important;justify-content:flex-end!important;gap:38px}
 .hk{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--red-hi);display:flex;align-items:center;gap:12px;margin-bottom:20px}
 .hk::before{content:"";width:30px;height:1px;background:var(--red-hi)}
 .hero-top h1{font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:-.02em;font-variation-settings:'wdth' 120;font-size:clamp(40px,6.2vw,94px);color:#fff}
-.hero-top h1 .ol{color:transparent;-webkit-text-stroke:1.5px #C6C9CC}
+.hero-top h1 .olw{color:transparent;-webkit-text-stroke:2px #FFFFFF;text-stroke:2px #FFFFFF}
 .hp{max-width:58ch;margin-top:22px;color:#D8DBDE;font-size:17px}
 .hcta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
 /* ---------- hero ---------- */
@@ -91,7 +91,7 @@ nav a:hover::after{right:0}
 @keyframes pan{to{transform:scale(1.08) translate(-2%,1.2%)}}
 .machine .grain{position:absolute;inset:0;z-index:-1;opacity:.4;mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
-.machine .scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(185deg,rgba(16,18,20,.12) 38%,rgba(16,18,20,.8) 88%)}
+.machine .scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(185deg,rgba(16,18,20,.28) 30%,rgba(16,18,20,.85) 86%)}
 .machine .vidtag{position:absolute;top:16px;right:16px;display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;color:#CDD0D3;padding:6px 10px;background:rgba(16,18,20,.55);border:1px solid rgba(255,255,255,.16)}
 .machine .vidtag .dot{width:6px;height:6px;background:var(--red-hi);animation:blink 1.6s steps(2) infinite}
 @keyframes blink{50%{opacity:.25}}
@@ -105,6 +105,17 @@ nav a:hover::after{right:0}
 .machine .st b .u{font-size:16px;color:var(--red-hi)}
 .machine .ticks{position:absolute;left:0;right:0;bottom:0;height:18px;border-top:1px solid rgba(255,255,255,.14);background:repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 1px,transparent 1px 40px)}
 
+
+#hero-intro{background:var(--white)}
+.introgrid{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+@media(max-width:900px){.introgrid{grid-template-columns:1fr}}
+.lede{font-size:clamp(17px,1.5vw,20px);color:var(--gun);max-width:58ch}
+.hbtns{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+.wstats{display:flex;gap:40px;flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:900px){.wstats{justify-content:flex-start}}
+.ws{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--mute)}
+.ws b{display:block;font-family:'Archivo',sans-serif;font-weight:800;font-variation-settings:'wdth' 114;font-size:46px;color:var(--ink);letter-spacing:0;line-height:1.1}
+.ws .plus{font-size:24px;color:var(--red)}
 /* ---------- section chrome ---------- */
 section{padding:88px 0;border-top:1px solid var(--line)}
 .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:46px}
@@ -223,21 +234,32 @@ footer{background:#fff;border-top:1px solid var(--line);padding:52px 0 40px}
   <div class="in">
     <div class="rv">
       <div class="hk">Lubricants · AdBlue® · Vehicle fluids</div>
-      <h1>Developed in Germany.<br><span class="ol">Crafted in Europe.</span></h1>
-      <p class="hp" data-c="hero.lede">Engine oils, transmission and hydraulic fluids, greases, brake fluid, additives, AdBlue® and antifrost. Made to the highest standards, supplied in every pack size from bottle to bulk.</p>
-      <div class="hcta">
-        <a class="btn btn-red" href="contact.html" data-magnet>Request a quote <span class="arr">→</span></a>
-        <a class="btn btn-inv" href="#range">The range</a>
-      </div>
-    </div>
-    <div class="stats rv">
-      <div class="st"><b data-count="8">0</b>PRODUCT FAMILIES</div>
-      <div class="st"><b data-count="6">0</b>SECTORS SERVED</div>
-      <div class="st"><b><span data-count="30">0</span><span class="u">+</span></b>COUNTRIES SUPPLIED</div>
+      <h1>Developed in Germany.<br><span class="olw">Crafted in Europe.</span></h1>
     </div>
   </div>
   <div class="ticks"></div>
 </div>
+
+
+<!-- INTRO -->
+<section id="hero-intro" style="border-top:0;padding:72px 0">
+  <div class="wrap">
+    <div class="introgrid rv">
+      <div>
+        <p class="lede" data-c="hero.lede">Engine oils, transmission and hydraulic fluids, greases, brake fluid, additives, AdBlue® and antifrost. Made to the highest standards, supplied in every pack size from bottle to bulk.</p>
+        <div class="hbtns">
+          <a class="btn btn-red" href="contact.html" data-magnet>Request a quote <span class="arr">→</span></a>
+          <a class="btn" href="#sectors">The sectors</a>
+        </div>
+      </div>
+      <div class="wstats">
+        <div class="ws"><b data-count="8">0</b><span>PRODUCT FAMILIES</span></div>
+        <div class="ws"><b data-count="6">0</b><span>SECTORS SERVED</span></div>
+        <div class="ws"><b><span data-count="30">0</span><span class="plus">+</span></b><span>COUNTRIES SUPPLIED</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- SECTORS -->
 <section class="sectors" id="sectors"><div class="wrap">
@@ -354,7 +376,7 @@ const cio = new IntersectionObserver(es=>es.forEach(e=>{
     (function step(t){const p=Math.min((t-t0)/dur,1);el.textContent=Math.round(end*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)})(t0);
   });
 }),{threshold:.4});
-cio.observe(document.getElementById('hero-machine'));
+cio.observe(document.getElementById('hero-intro'));
 
 /* sector strip. Drag with inertia */
 const strip=document.getElementById('strip');
