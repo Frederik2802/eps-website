@@ -1,0 +1,63 @@
+{
+  "intro": "AdBlue® for SCR diesel systems. One product, every pack size that fleets actually order, from canister to bulk delivery.",
+  "videos": {
+    "familyfilm": {
+      "video": "",
+      "poster": ""
+    }
+  },
+  "products": [
+    {
+      "name": "Blue AUS 32. 10 L [TC]",
+      "sub": "Canister with filling spout",
+      "tag": "can",
+      "grade": "AUS 32",
+      "approvals": [
+        "ISO 22241 [TC]"
+      ],
+      "packs": "10 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Blue AUS 32. 208 L [TC]",
+      "sub": "Drum",
+      "tag": "drum",
+      "grade": "AUS 32",
+      "approvals": [
+        "ISO 22241 [TC]"
+      ],
+      "packs": "208 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Blue AUS 32. IBC [TC]",
+      "sub": "IBC container",
+      "tag": "drum",
+      "grade": "AUS 32",
+      "approvals": [
+        "ISO 22241 [TC]"
+      ],
+      "packs": "1000 L IBC",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Blue AUS 32. Bulk [TC]",
+      "sub": "Tanker delivery",
+      "tag": "bulk",
+      "grade": "AUS 32",
+      "approvals": [
+        "ISO 22241 [TC]"
+      ],
+      "packs": "Bulk",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "lede": "Engine oils, transmission and hydraulic fluids, greases, brake fluid, additives, AdBlue® and antifrost. Made to the highest standards, supplied in every pack size from bottle to bulk."
+  },
+  "videos": {
+    "hero": {
+      "video": "media/video/hero.mp4",
+      "poster": "media/video/hero-poster.jpg"
+    }
+  },
+  "sectors": [
+    {
+      "title": "Automotive",
+      "desc": "Passenger-car service fills, workshop and trade supply."
+    },
+    {
+      "title": "Performance",
+      "desc": "Race-proven chemistry for engines that live at the limit."
+    },
+    {
+      "title": "Transport",
+      "desc": "Long-drain fleet lubrication and AdBlue® at scale."
+    },
+    {
+      "title": "Industrial",
+      "desc": "Hydraulics, circulation and greases for continuous plant."
+    },
+    {
+      "title": "Agrar",
+      "desc": "Field machinery that cannot stop for a season."
+    },
+    {
+      "title": "Defense",
+      "desc": "Specification-first supply for demanding fleets."
+    }
+  ]
+}

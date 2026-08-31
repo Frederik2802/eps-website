@@ -1,0 +1,63 @@
+{
+  "intro": "Hydraulic and circulation oils for mobile machinery and continuous plant. Clean systems, stable viscosity, thousands of hours between changes.",
+  "videos": {
+    "familyfilm": {
+      "video": "",
+      "poster": ""
+    }
+  },
+  "products": [
+    {
+      "name": "Hydro HLP 32 [TC]",
+      "sub": "Hydraulic oil",
+      "tag": "hlp",
+      "grade": "ISO VG 32",
+      "approvals": [
+        "DIN 51524-2 [TC]"
+      ],
+      "packs": "20 L · 208 L · IBC",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Hydro HLP 46 [TC]",
+      "sub": "Hydraulic oil",
+      "tag": "hlp",
+      "grade": "ISO VG 46",
+      "approvals": [
+        "DIN 51524-2 [TC]"
+      ],
+      "packs": "20 L · 208 L · IBC",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Hydro HVLP 46 [TC]",
+      "sub": "High viscosity index · outdoor duty",
+      "tag": "hvlp",
+      "grade": "ISO VG 46",
+      "approvals": [
+        "DIN 51524-3 [TC]"
+      ],
+      "packs": "20 L · 208 L · IBC",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Hydro CL 100 [TC]",
+      "sub": "Circulation oil",
+      "tag": "circ",
+      "grade": "ISO VG 100",
+      "approvals": [
+        "DIN 51517-2 [TC]"
+      ],
+      "packs": "20 L · 208 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    }
+  ]
+}

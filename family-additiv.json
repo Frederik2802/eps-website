@@ -1,0 +1,63 @@
+{
+  "intro": "Fuel and oil additives with a defined job and a measurable effect. Cleaning, stabilising and protecting the systems the main fluids run in.",
+  "videos": {
+    "familyfilm": {
+      "video": "",
+      "poster": ""
+    }
+  },
+  "products": [
+    {
+      "name": "Additiv Diesel Clean [TC]",
+      "sub": "Injector & system cleaner",
+      "tag": "fuel",
+      "grade": "250 ml dose",
+      "approvals": [
+        "[TC]"
+      ],
+      "packs": "250 ml · 1 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Additiv Petrol Clean [TC]",
+      "sub": "Intake & injector cleaner",
+      "tag": "fuel",
+      "grade": "250 ml dose",
+      "approvals": [
+        "[TC]"
+      ],
+      "packs": "250 ml · 1 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Additiv Oil Stabil [TC]",
+      "sub": "Oil consumption stabiliser",
+      "tag": "oil",
+      "grade": "300 ml dose",
+      "approvals": [
+        "[TC]"
+      ],
+      "packs": "300 ml",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Additiv Cooler Care [TC]",
+      "sub": "Cooling system protection",
+      "tag": "sys",
+      "grade": "250 ml dose",
+      "approvals": [
+        "[TC]"
+      ],
+      "packs": "250 ml",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    }
+  ]
+}

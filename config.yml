@@ -1,0 +1,294 @@
+# EPS — Sveltia CMS configuration
+# After creating your GitHub repository, replace REPO below (format: username/repository).
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/eps-website
+  branch: main
+
+media_folder: media/uploads
+public_folder: /media/uploads
+
+site_url: https://www.eps-global.com
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Homepage
+        file: content/en/home.json
+        fields:
+          - {name: hero, label: Hero, widget: object, fields: [
+              {name: lede, label: Intro paragraph, widget: text}]}
+          - {name: machine, label: Hero video block, widget: object, fields: [
+              {name: headline, label: Statement over the video, widget: string}]}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: hero, label: Hero loop, widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+          - {name: sectors, label: Sector cards, widget: list, fields: [
+              {name: title, label: Title, widget: string},
+              {name: desc, label: Description, widget: text}]}
+      - name: company
+        label: Company page
+        file: content/en/company.json
+        fields:
+          - {name: intro, label: Intro paragraph, widget: text}
+  - name: sectors
+    label: Sector pages
+    files:
+      - name: automotive
+        label: Automotive
+        file: content/en/sector-automotive.json
+        fields:
+          - {name: title, label: Sector name, widget: string}
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: opener, label: Full-screen opener loop, widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+      - name: performance
+        label: Performance
+        file: content/en/sector-performance.json
+        fields:
+          - {name: title, label: Sector name, widget: string}
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: opener, label: Full-screen opener loop, widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+      - name: transport
+        label: Transport
+        file: content/en/sector-transport.json
+        fields:
+          - {name: title, label: Sector name, widget: string}
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: opener, label: Full-screen opener loop, widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+      - name: industrial
+        label: Industrial
+        file: content/en/sector-industrial.json
+        fields:
+          - {name: title, label: Sector name, widget: string}
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: opener, label: Full-screen opener loop, widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+      - name: agrar
+        label: Agrar
+        file: content/en/sector-agrar.json
+        fields:
+          - {name: title, label: Sector name, widget: string}
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: opener, label: Full-screen opener loop, widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+      - name: defense
+        label: Defense
+        file: content/en/sector-defense.json
+        fields:
+          - {name: title, label: Sector name, widget: string}
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: opener, label: Full-screen opener loop, widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+  - name: families
+    label: Product families
+    files:
+      - name: motor
+        label: EPS Motor — engine oils
+        file: content/en/family-motor.json
+        fields:
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: familyfilm, label: Family film (AI product video), widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+          - name: products
+            label: Products
+            widget: list
+            fields:
+              - {name: name, label: Product name, widget: string}
+              - {name: sub, label: Subtitle, widget: string}
+              - {name: tag, label: "Sub-range (pc / cv / ag / mc / cl)", widget: select, options: [pc, cv, ag, mc, cl]}
+              - {name: grade, label: Grade, widget: string}
+              - {name: approvals, label: Approvals, widget: list, field: {name: a, label: Approval, widget: string}}
+              - {name: packs, label: Pack sizes, widget: string}
+              - {name: url, label: Product page link, widget: string, required: false}
+              - {name: tds, label: TDS PDF, widget: file, required: false}
+              - {name: sds, label: SDS PDF, widget: file, required: false}
+      - name: gear
+        label: EPS Gear — transmission & axle
+        file: content/en/family-gear.json
+        fields:
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: familyfilm, label: Family film (AI product video), widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+          - name: products
+            label: Products
+            widget: list
+            fields:
+              - {name: name, label: Product name, widget: string}
+              - {name: sub, label: Subtitle, widget: string}
+              - {name: tag, label: Sub-range tag, widget: string}
+              - {name: grade, label: Grade, widget: string}
+              - {name: approvals, label: Approvals, widget: list, field: {name: a, label: Approval, widget: string}}
+              - {name: packs, label: Pack sizes, widget: string}
+              - {name: url, label: Product page link, widget: string, required: false}
+              - {name: tds, label: TDS PDF, widget: file, required: false}
+              - {name: sds, label: SDS PDF, widget: file, required: false}
+      - name: hydro
+        label: EPS Hydro — hydraulics
+        file: content/en/family-hydro.json
+        fields:
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: familyfilm, label: Family film (AI product video), widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+          - name: products
+            label: Products
+            widget: list
+            fields:
+              - {name: name, label: Product name, widget: string}
+              - {name: sub, label: Subtitle, widget: string}
+              - {name: tag, label: Sub-range tag, widget: string}
+              - {name: grade, label: Grade, widget: string}
+              - {name: approvals, label: Approvals, widget: list, field: {name: a, label: Approval, widget: string}}
+              - {name: packs, label: Pack sizes, widget: string}
+              - {name: url, label: Product page link, widget: string, required: false}
+              - {name: tds, label: TDS PDF, widget: file, required: false}
+              - {name: sds, label: SDS PDF, widget: file, required: false}
+      - name: grease
+        label: EPS Grease — greases
+        file: content/en/family-grease.json
+        fields:
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: familyfilm, label: Family film (AI product video), widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+          - name: products
+            label: Products
+            widget: list
+            fields:
+              - {name: name, label: Product name, widget: string}
+              - {name: sub, label: Subtitle, widget: string}
+              - {name: tag, label: Sub-range tag, widget: string}
+              - {name: grade, label: Grade, widget: string}
+              - {name: approvals, label: Approvals, widget: list, field: {name: a, label: Approval, widget: string}}
+              - {name: packs, label: Pack sizes, widget: string}
+              - {name: url, label: Product page link, widget: string, required: false}
+              - {name: tds, label: TDS PDF, widget: file, required: false}
+              - {name: sds, label: SDS PDF, widget: file, required: false}
+      - name: brake
+        label: EPS Brake — brake fluid
+        file: content/en/family-brake.json
+        fields:
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: familyfilm, label: Family film (AI product video), widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+          - name: products
+            label: Products
+            widget: list
+            fields:
+              - {name: name, label: Product name, widget: string}
+              - {name: sub, label: Subtitle, widget: string}
+              - {name: tag, label: Sub-range tag, widget: string}
+              - {name: grade, label: Grade, widget: string}
+              - {name: approvals, label: Approvals, widget: list, field: {name: a, label: Approval, widget: string}}
+              - {name: packs, label: Pack sizes, widget: string}
+              - {name: url, label: Product page link, widget: string, required: false}
+              - {name: tds, label: TDS PDF, widget: file, required: false}
+              - {name: sds, label: SDS PDF, widget: file, required: false}
+      - name: additiv
+        label: EPS Additiv — additives
+        file: content/en/family-additiv.json
+        fields:
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: familyfilm, label: Family film (AI product video), widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+          - name: products
+            label: Products
+            widget: list
+            fields:
+              - {name: name, label: Product name, widget: string}
+              - {name: sub, label: Subtitle, widget: string}
+              - {name: tag, label: Sub-range tag, widget: string}
+              - {name: grade, label: Grade, widget: string}
+              - {name: approvals, label: Approvals, widget: list, field: {name: a, label: Approval, widget: string}}
+              - {name: packs, label: Pack sizes, widget: string}
+              - {name: url, label: Product page link, widget: string, required: false}
+              - {name: tds, label: TDS PDF, widget: file, required: false}
+              - {name: sds, label: SDS PDF, widget: file, required: false}
+      - name: blue
+        label: EPS Blue — AdBlue®
+        file: content/en/family-blue.json
+        fields:
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: familyfilm, label: Family film (AI product video), widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+          - name: products
+            label: Products
+            widget: list
+            fields:
+              - {name: name, label: Product name, widget: string}
+              - {name: sub, label: Subtitle, widget: string}
+              - {name: tag, label: Sub-range tag, widget: string}
+              - {name: grade, label: Grade, widget: string}
+              - {name: approvals, label: Approvals, widget: list, field: {name: a, label: Approval, widget: string}}
+              - {name: packs, label: Pack sizes, widget: string}
+              - {name: url, label: Product page link, widget: string, required: false}
+              - {name: tds, label: TDS PDF, widget: file, required: false}
+              - {name: sds, label: SDS PDF, widget: file, required: false}
+      - name: arctic
+        label: EPS Arctic — winter care
+        file: content/en/family-arctic.json
+        fields:
+          - {name: intro, label: Intro paragraph, widget: text}
+          - {name: videos, label: Videos, widget: object, fields: [
+              {name: familyfilm, label: Family film (AI product video), widget: object, fields: [
+                {name: video, label: Video file (MP4), widget: file, required: false},
+                {name: poster, label: Poster image (JPG), widget: image, required: false}]}]}
+          - name: products
+            label: Products
+            widget: list
+            fields:
+              - {name: name, label: Product name, widget: string}
+              - {name: sub, label: Subtitle, widget: string}
+              - {name: tag, label: Sub-range tag, widget: string}
+              - {name: grade, label: Grade, widget: string}
+              - {name: approvals, label: Approvals, widget: list, field: {name: a, label: Approval, widget: string}}
+              - {name: packs, label: Pack sizes, widget: string}
+              - {name: url, label: Product page link, widget: string, required: false}
+              - {name: tds, label: TDS PDF, widget: file, required: false}
+              - {name: sds, label: SDS PDF, widget: file, required: false}
+  - name: documents
+    label: Download centre
+    files:
+      - name: downloads
+        label: Documents
+        file: content/en/downloads.json
+        fields:
+          - name: docs
+            label: Documents
+            widget: list
+            fields:
+              - {name: name, label: Document name, widget: string}
+              - {name: family, label: Family, widget: string}
+              - {name: type, label: Type, widget: select, options: [TDS, SDS]}
+              - {name: lang, label: Language, widget: string, default: EN}
+              - {name: file, label: PDF file, widget: file, required: false}

@@ -1,0 +1,10 @@
+{
+  "title": "Industrial",
+  "intro": "Hydraulics, circulation oils and greases for plant that runs around the clock. Where an unplanned stop costs more than a year of lubricants.",
+  "videos": {
+    "opener": {
+      "video": "media/video/industrial.mp4",
+      "poster": "media/video/industrial-poster.jpg"
+    }
+  }
+}

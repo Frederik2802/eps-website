@@ -1,0 +1,10 @@
+{
+  "title": "Automotive",
+  "intro": "Passenger-car service fills, workshop and trade supply. A range wide enough to cover the whole ramp, documented well enough to order without guesswork.",
+  "videos": {
+    "opener": {
+      "video": "media/video/automotive.mp4",
+      "poster": "media/video/automotive-poster.jpg"
+    }
+  }
+}

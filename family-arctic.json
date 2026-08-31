@@ -1,0 +1,63 @@
+{
+  "intro": "Screenwash, coolant antifreeze and de-icer. The winter line that completes the pallet, rated for the temperatures actually printed on the label.",
+  "videos": {
+    "familyfilm": {
+      "video": "",
+      "poster": ""
+    }
+  },
+  "products": [
+    {
+      "name": "Arctic Screenwash −60 [TC]",
+      "sub": "Concentrate",
+      "tag": "sw",
+      "grade": "−60 °C conc.",
+      "approvals": [
+        "[TC]"
+      ],
+      "packs": "1 L · 5 L · 208 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Arctic Screenwash −20 [TC]",
+      "sub": "Ready mix",
+      "tag": "sw",
+      "grade": "−20 °C ready",
+      "approvals": [
+        "[TC]"
+      ],
+      "packs": "5 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Arctic Coolant G12+ [TC]",
+      "sub": "Antifreeze concentrate",
+      "tag": "cool",
+      "grade": "Concentrate",
+      "approvals": [
+        "G12+ [TC]"
+      ],
+      "packs": "1.5 L · 5 L · 20 L · 208 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Arctic De-Icer [TC]",
+      "sub": "Windscreen de-icer spray",
+      "tag": "de",
+      "grade": "Spray",
+      "approvals": [
+        "[TC]"
+      ],
+      "packs": "500 ml",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    }
+  ]
+}

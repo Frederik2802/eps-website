@@ -1,0 +1,50 @@
+{
+  "intro": "Greases for chassis, bearings and heavy plant. Multi-purpose lithium to EP and high-temperature complex formulations.",
+  "videos": {
+    "familyfilm": {
+      "video": "",
+      "poster": ""
+    }
+  },
+  "products": [
+    {
+      "name": "Grease MP 2 [TC]",
+      "sub": "Multi-purpose lithium",
+      "tag": "mp",
+      "grade": "NLGI 2",
+      "approvals": [
+        "KP2K-30 [TC]"
+      ],
+      "packs": "400 g · 5 kg · 25 kg · 180 kg",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Grease EP 2 [TC]",
+      "sub": "Extreme pressure",
+      "tag": "ep",
+      "grade": "NLGI 2",
+      "approvals": [
+        "KP2K-30 [TC]"
+      ],
+      "packs": "400 g · 5 kg · 25 kg · 180 kg",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Grease HT 2 [TC]",
+      "sub": "High-temperature complex",
+      "tag": "ht",
+      "grade": "NLGI 2",
+      "approvals": [
+        "KP2P-20 [TC]"
+      ],
+      "packs": "400 g · 25 kg",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "intro": "Brake fluids to DOT specification. Boiling point held under hard use, water tolerance documented per batch.",
+  "videos": {
+    "familyfilm": {
+      "video": "",
+      "poster": ""
+    }
+  },
+  "products": [
+    {
+      "name": "Brake DOT 3 [TC]",
+      "sub": "Standard duty",
+      "tag": "d3",
+      "grade": "DOT 3",
+      "approvals": [
+        "FMVSS 116 [TC]"
+      ],
+      "packs": "250 ml · 500 ml · 5 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Brake DOT 4 [TC]",
+      "sub": "The workshop standard",
+      "tag": "d4",
+      "grade": "DOT 4",
+      "approvals": [
+        "FMVSS 116 [TC]",
+        "ISO 4925 [TC]"
+      ],
+      "packs": "250 ml · 500 ml · 1 L · 5 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Brake DOT 5.1 [TC]",
+      "sub": "High wet boiling point",
+      "tag": "d51",
+      "grade": "DOT 5.1",
+      "approvals": [
+        "FMVSS 116 [TC]"
+      ],
+      "packs": "250 ml · 500 ml · 1 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    }
+  ]
+}

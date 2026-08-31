@@ -1,0 +1,93 @@
+{
+  "intro": "Engine oils for every duty. From passenger-car service fills to commercial fleets, agricultural machinery, two-wheelers and classic monogrades. Each product page carries the full specification and its documents.",
+  "videos": {
+    "familyfilm": {
+      "video": "",
+      "poster": ""
+    }
+  },
+  "products": [
+    {
+      "name": "Motor PC 10W-40 [NAME TO CONFIRM]",
+      "sub": "Passenger car · semi-synthetic",
+      "tag": "pc",
+      "grade": "10W-40",
+      "approvals": [
+        "ACEA A3/B4 [TC]",
+        "API SN [TC]"
+      ],
+      "packs": "1 L · 5 L · 60 L · 208 L",
+      "url": "product-motor-10w40.html",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Motor PC 5W-30 C3 [TC]",
+      "sub": "Passenger car · full synthetic · low SAPS",
+      "tag": "pc",
+      "grade": "5W-30",
+      "approvals": [
+        "ACEA C3 [TC]",
+        "MB / VW [TC]"
+      ],
+      "packs": "1 L · 5 L · 208 L",
+      "url": "product-motor-10w40.html",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Motor Truck 10W-40 E7 [TC]",
+      "sub": "Commercial vehicle · long drain",
+      "tag": "cv",
+      "grade": "10W-40",
+      "approvals": [
+        "ACEA E7 [TC]",
+        "API CI-4 [TC]"
+      ],
+      "packs": "20 L · 208 L · IBC",
+      "url": "product-motor-10w40.html",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Motor Agri STOU 10W-30 [TC]",
+      "sub": "Agri · super tractor oil universal",
+      "tag": "ag",
+      "grade": "10W-30",
+      "approvals": [
+        "STOU [TC]",
+        "API GL-4 [TC]"
+      ],
+      "packs": "20 L · 208 L · IBC",
+      "url": "product-motor-10w40.html",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Motor Moto 4T 10W-40 [TC]",
+      "sub": "Two-wheeler · wet clutch",
+      "tag": "mc",
+      "grade": "10W-40",
+      "approvals": [
+        "JASO MA2 [TC]"
+      ],
+      "packs": "1 L · 4 L",
+      "url": "product-motor-10w40.html",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Motor Classic SAE 30 [TC]",
+      "sub": "Classic · monograde",
+      "tag": "cl",
+      "grade": "SAE 30",
+      "approvals": [
+        "API SF/CC [TC]"
+      ],
+      "packs": "1 L · 5 L",
+      "url": "product-motor-10w40.html",
+      "tds": "",
+      "sds": ""
+    }
+  ]
+}

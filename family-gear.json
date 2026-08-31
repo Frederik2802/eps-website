@@ -1,0 +1,63 @@
+{
+  "intro": "Transmission, axle and automatic transmission fluids. Shift quality and gear protection specified per application, from manual boxes to modern ATFs.",
+  "videos": {
+    "familyfilm": {
+      "video": "",
+      "poster": ""
+    }
+  },
+  "products": [
+    {
+      "name": "Gear MTF 75W-90 [TC]",
+      "sub": "Manual transmission · synthetic",
+      "tag": "man",
+      "grade": "75W-90",
+      "approvals": [
+        "API GL-4 [TC]"
+      ],
+      "packs": "1 L · 20 L · 208 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Gear Axle 80W-90 [TC]",
+      "sub": "Axle / hypoid",
+      "tag": "man",
+      "grade": "80W-90",
+      "approvals": [
+        "API GL-5 [TC]"
+      ],
+      "packs": "1 L · 20 L · 208 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Gear ATF D III [TC]",
+      "sub": "Automatic transmission",
+      "tag": "atf",
+      "grade": "ATF",
+      "approvals": [
+        "Dexron III [TC]"
+      ],
+      "packs": "1 L · 20 L · 208 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    },
+    {
+      "name": "Gear ATF VI [TC]",
+      "sub": "Automatic transmission · low viscosity",
+      "tag": "atf",
+      "grade": "ATF",
+      "approvals": [
+        "Dexron VI [TC]"
+      ],
+      "packs": "1 L · 20 L · 208 L",
+      "url": "",
+      "tds": "",
+      "sds": ""
+    }
+  ]
+}
