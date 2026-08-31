@@ -36,8 +36,8 @@ header.scrolled{background:var(--header-bg);backdrop-filter:blur(12px);border-bo
 header:not(.scrolled) nav a{color:#E4E6E8}
 header:not(.scrolled) nav a:hover{color:#fff}
 header:not(.scrolled) .tagline{color:#AEB1B3}
-.bar{display:flex;align-items:center;gap:34px;padding:0 var(--pad);max-width:var(--maxw);margin:0 auto;height:66px}
-.bar .lg img{height:36px;width:auto}
+.bar{display:flex;align-items:center;gap:34px;padding:0 var(--pad);max-width:var(--maxw);margin:0 auto;height:80px}
+.bar .lg img{height:50px;width:auto;transition:height .25s var(--ease)}
 nav{display:flex;gap:28px;margin-left:8px}
 nav a{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gun);position:relative;padding:6px 0;transition:color var(--t-fast) var(--ease)}
 nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--red);transition:right var(--t-base) var(--ease)}
@@ -64,7 +64,7 @@ nav a:hover::after{right:0}
 
 
 /* full-top video hero */
-.machine.hero-top{min-height:74vh;padding-top:66px;margin-top:0}
+.machine.hero-top{min-height:74vh;padding-top:80px;margin-top:0}
 .machine.hero-top .in{flex-direction:column;align-items:flex-start!important;justify-content:flex-end!important;gap:38px}
 .hk{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--red-hi);display:flex;align-items:center;gap:12px;margin-bottom:20px}
 .hk::before{content:"";width:30px;height:1px;background:var(--red-hi)}
@@ -254,7 +254,7 @@ header:not(.scrolled) .iconbtn:hover{border-color:#fff;color:#fff}
 @media(max-width:900px){
   .bar{gap:10px;padding-inline:16px}
   .bar .lg{margin-right:auto}
-  .bar .lg img{height:28px}
+  .bar .lg img{height:38px}
   .bar .hcta,.bar .cta{margin-left:0}
   .util{margin-left:0;gap:8px}
   .lang{margin-left:0}
@@ -354,6 +354,22 @@ tr:hover .chip{border-color:var(--mute)}
 .cc-sw input:checked + span::before{transform:translateX(20px)}
 .cc-sw input:focus-visible + span{outline:2px solid var(--red);outline-offset:2px}
 @media (prefers-reduced-motion: reduce){#cc,.cc-sw span,.cc-sw span::before{transition:none}}
+
+.hk{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px}
+.hk::before{display:none}
+.hk span{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:clamp(11.5px,1.05vw,14px);
+  letter-spacing:.16em;text-transform:uppercase;
+  color:#fff;padding:9px 15px;
+  border:1px solid rgba(255,255,255,.42);
+  background:rgba(16,18,20,.34);
+  backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
+  text-shadow:0 1px 10px rgba(0,0,0,.55);
+  transition:border-color .25s var(--ease),background .25s var(--ease)}
+.hk span:first-child{border-color:var(--red-hi);background:rgba(176,29,38,.34)}
+.machine.hero-top:hover .hk span{border-color:rgba(255,255,255,.7)}
+@media(max-width:560px){.hk{gap:7px}.hk span{padding:7px 11px;letter-spacing:.12em}}
 </style>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="EPS GmbH">
@@ -390,7 +406,7 @@ tr:hover .chip{border-color:var(--mute)}
   <div class="scrim"></div>
   <div class="in">
     <div class="rv">
-      <div class="hk">Schmierstoffe · AdBlue® · Fahrzeugflüssigkeiten</div>
+      <div class="hk"><span>Schmierstoffe</span><span>AdBlue®</span><span>Fahrzeugflüssigkeiten</span></div>
       <h1>Entwickelt in Deutschland.<br><span class="olw">Gefertigt in Europa.</span></h1>
     </div>
   </div>
