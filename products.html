@@ -32,8 +32,8 @@ img{max-width:100%;display:block}
 
 /* ---------- header ---------- */
 header{position:sticky;top:0;z-index:90;background:var(--header-bg);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;gap:34px;padding:0 var(--pad);max-width:var(--maxw);margin:0 auto;height:66px}
-.bar .lg img{height:36px;width:auto}
+.bar{display:flex;align-items:center;gap:34px;padding:0 var(--pad);max-width:var(--maxw);margin:0 auto;height:80px}
+.bar .lg img{height:50px;width:auto;transition:height .25s var(--ease)}
 nav{display:flex;gap:28px;margin-left:8px}
 nav a{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gun);position:relative;padding:6px 0;transition:color var(--t-fast) var(--ease)}
 nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--red);transition:right var(--t-base) var(--ease)}
@@ -223,7 +223,7 @@ header:not(.scrolled) .iconbtn:hover{border-color:#fff;color:#fff}
 @media(max-width:900px){
   .bar{gap:10px;padding-inline:16px}
   .bar .lg{margin-right:auto}
-  .bar .lg img{height:28px}
+  .bar .lg img{height:38px}
   .bar .hcta,.bar .cta{margin-left:0}
   .util{margin-left:0;gap:8px}
   .lang{margin-left:0}
